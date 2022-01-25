@@ -1,0 +1,122 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyCart {
+    box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+    height: 40vh;
+   
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    top: 20vh;
+    margin: auto;
+   display: none;
+}
+
+.emptyCartText{
+   color: #4c0583;
+    text-shadow: 1px 1px #4c0583;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.item{
+    
+    width: 100%;
+    background-color: #ffff;
+    box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+}
+.product{
+    background-color: #ffff;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    /* box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%); */
+    padding: 15px;
+    display: flex;
+margin-bottom: 20px;
+    /* justify-content: ; */
+}
+.item img{
+    height: 200px;
+    position: relative;
+    top: 50px;
+}
+.itemDescription{
+position: relative;
+padding: 13px;
+top: 10px;
+}
+.itemDescription p{
+    font-size: 20px;
+
+}
+.buttonList{
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.priceDiv{
+    position: absolute;
+    right: 20%;
+    font-size: 20px;
+}
+.shoppingCart{
+    position:relative;
+    font-size: 20px;
+    top: 35px;
+   right: 30%;
+/*     
+    top: -9px;
+    left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.item hr{
+    position: relative;
+    top: 20px;
+    color: green;
+}
+
+
+
+
+
+
+@media (min-width:500px) {
+ 
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .emptyCart {
+        box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+        height:350px;
+       
+        width: 400px;
+        margin-top: 20px;
+        border-radius: 2px;
+        text-align: center;
+        position: relative;
+        top: 20vh;
+        margin: auto;
+    }
+    .emptyCartText{
+        color: #4c0583;
+         text-shadow: 1px 1px #4c0583;
+         font-size: 1.3rem;
+     }
+}

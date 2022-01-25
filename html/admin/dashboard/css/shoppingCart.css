@@ -1,0 +1,212 @@
+
+
+ main{
+
+    top: 11vh;
+   position: relative;
+    width: 70%;
+    background-color:#f4f9ff;
+    margin: auto;
+    box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+text-align: center;
+border: 2px solid #f4f9ff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.usersettings{
+    background-color: #fff;
+    background-color: #142c8e;
+    color: #fff;
+ }
+ .usersettings >.user img{
+ width: 150px;
+ border-radius: 50%;
+ margin: 10px;
+ }
+ 
+ .usersettings .user{
+     background-color: #142c8e;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     color: #fff;
+     font-size: 20px;
+ }
+ .name{
+     font-size: 40px;
+     width: 48%;
+ }
+ 
+ .usersettings .about{
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .about .large{
+     font-weight: 600;
+     font-size: 22px;
+    
+ }
+ 
+ 
+ .usersettings>.about p{
+  position: relative;
+  bottom: 12px;
+  font-size: 14px;
+  
+ }
+ 
+ .inputs{
+     position: relative;
+     top: 70px;
+ } 
+ .inputs >div{
+     margin: 17px;
+     padding: 17px;
+     background-color: #fff;
+ }
+ input{
+    padding: 8px;
+    border: 1px solid rgb(36, 35, 35);
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    left: 10%;
+    font-size: 18px;
+    position: relative;
+    left: 70px;
+    text-align: center;
+
+ }
+ label{
+     font-size: 19px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     position: absolute;
+     left: 70px;
+ }
+
+
+        button{
+            padding: 10px 10px;
+            display: block;
+            width:250px;
+            background: #142c8e;
+            border-radius: 40px;
+            margin: 20px 0px;
+            text-decoration: none;
+            color:#fff;
+            text-align: center;
+            margin: auto;
+            border: 1px solid #142c8e;
+            cursor: pointer;
+         }
+    
+
+
+ @media (max-width:800px) {
+    main{
+
+        top: 2vh;
+       
+        width: 90%;
+        background-color:#f4f9ff;
+        margin: auto;
+        box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+    text-align: center;
+    border: 2px solid #f4f9ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .inputs>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input{
+        padding: 6px;
+        border: 1px solid rgb(36, 35, 35);
+        width: 96%;
+        border-radius: 10px;
+        position: relative;
+        left: 0%;
+        font-size: 14px;
+        text-align: center;
+    
+     }
+
+
+     input[type=file]{
+        padding: 6px;
+        border: 1px solid rgb(36, 35, 35);
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        left: 0%;
+        font-size: 14px;
+        text-align: center;
+        
+    
+     }
+
+
+     label{
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        left: 0px;
+    }
+
+    .usersettings >.user img{
+        width:40%;
+        border-radius: 50%;
+        /* margin: 10px; */
+        }
+        
+        .usersettings .user{
+            background-color: #142c8e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .name{
+            font-size: 17px;
+            width: auto;
+        }
+
+        .about .large{
+            font-weight: 600;
+            font-size: 16px;
+           
+        }
+        
+        
+        .usersettings>.about p{
+         position: relative;
+         bottom: 12px;
+         font-size: 12px;
+         
+        }
+        button{
+            padding: 6px 12px;
+            display: block;
+            width:55%;
+            background: #142c8e;
+            border-radius: 40px;
+            margin: 20px 0px;
+            text-decoration: none;
+            color:#fff;
+            text-align: center;
+            margin: auto;
+            border: 1px solid #142c8e;
+         }
+    
+ }

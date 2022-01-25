@@ -1,0 +1,143 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyCart {
+    box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+    height: 40vh;
+   
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    top: 20vh;
+    margin: auto;
+   display: none;
+}
+
+.emptyCartText{
+   color: #4c0583;
+    text-shadow: 1px 1px #4c0583;
+    font-size: 1.2rem;
+}
+.inputContainer{
+    position: relative;
+    top: 8vh;
+}
+
+.item{
+   background-color: #fff;
+   box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+   width: 100%;
+   position: relative;
+    top:8vh;
+}
+.item div{
+    width: 100%;
+}
+.item >div{
+    display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+    
+}
+.item img{
+    width: 100%;
+    height: 70vh;
+}
+.pricetext{
+   
+    color :#4c0583;
+    font-size: 20px;
+    font-weight: bold;
+   
+   
+}
+h3{
+color :#4c0583;
+font-size: 20px;  
+font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.description{
+    text-align: left;
+    margin: 4px;
+}
+.hr{
+    background-color: #4c0583;
+    color: #4c0583;
+    height: 5px;
+    margin-bottom: 2px;
+}
+@media (min-width:500px) {
+ 
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .emptyCart {
+        box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+        height:350px;
+       
+        width: 400px;
+        margin-top: 20px;
+        border-radius: 2px;
+        text-align: center;
+        position: relative;
+        top: 20vh;
+        margin: auto;
+    }
+    .emptyCartText{
+        color: #4c0583;
+         text-shadow: 1px 1px #4c0583;
+         font-size: 1.3rem;
+     }
+
+     .item{
+        background-color: #fff;
+        box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+        width: 490px;
+        
+
+     }
+     .item >div{
+         display: flex;
+        justify-content: space-around;
+       flex-direction: row;
+
+     }
+     .item img{
+        width: 200px;
+        height: 200px;
+    }
+    .pricetext{
+   
+        color :#4c0583;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        top: 70px;
+    }
+h3{
+    color :#4c0583;
+    font-size: 25px;  
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+}
+
+@media (min-width:900px) {
+    .item{
+        background-color: #fff;
+        box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+        width: 600px;
+        
+
+     }
+}

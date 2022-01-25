@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap"); 
+
+html {
+    font-family: sans-serif;
+   
+  }
+body{
+ 
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+nav{
+    background-color: #fff;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height: 10vh;
+    z-index: 2;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 4%;
+}
+
+.logo{
+    background-color: #6206a8;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 50%;
+   margin: 8px;
+   color: #fff;
+   font-weight: 700;
+    font-size: 20px;
+}
+.logoText{
+    font-weight: 700;
+    font-size: 35px;
+    color: #6206a8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media (max-width:250px) {
+    .logoText{
+        display: none;
+    }
+    .logo{
+        position: relative;
+       right: 30%;
+    }
+}
+@media (min-width:450px) {
+    .logoContainer{
+       position: relative;
+       margin-right: 40%;
+       /* margin-left: 100px; */
+    }
+}
+
+.harmburgerContainer{
+    box-shadow: 0 9px 68px 0 rgb(62 57 107 / 20%);
+background-color: #fff;
+padding: 2px;
+width: 35px;
+height: 35px;
+text-align: center;
+border-radius: 5px;
+border: 0.1px solid rgb(228, 222, 222);
+margin-right: 4%;
+padding-top: 4px;
+
+}
+
+
+@keyframes move {
+  from{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 10vh;
+    left: 2px;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+    background-color: #fff;
+    height: 100vh;
+    width: 5%;
+z-index: 2;
+   } 
+
+   
+   to{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 10vh;
+    left: 2px;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+    background-color: #fff;
+    height: 100vh;
+    width: 70%;
+z-index: 2;
+   }
+}
+
+
+.navopen{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 10vh;
+    left: 2px;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+    background-color: #fff;
+    height: 100vh;
+    width: 70%;
+z-index: 2;
+
+animation-name: move;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
+}
+
+
+.navopen >div{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.navopen .myvideoContainer{
+padding-bottom:20px ; 
+
+}
+.navopen a{
+    padding: 15px;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.navclose{
+display: none;
+}
+
+.cancel{
+    position: absolute;
+    top: 0vh;
+   left: 30%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.dashboardLink{
+    background-color: #6206a8;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.navopen .myBooks{
+    background-color: #4c0583;
+    padding:8px 14px ;
+    border-radius: 20px;
+    color: #fff;
+}
+.navopen .myVideos{
+    background-color: #f7b731;
+    padding:8px 14px ;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.navopen .myBooks:hover{
+    background-color: #f7b731; 
+}
+.navopen .myVideos:hover{
+    background-color: #4c0583;
+}
+
+@media (min-width:800px) {
+    svg{
+        display: none;
+    }
+    /* .navopen >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+        .navopen a{
+            padding: 15px;
+            color: #000;
+            font-size: 20px;
+            text-decoration: none;
+            
+        } */
+       .navclose a{
+            padding: 5px;
+            color: #000;
+            font-size: 18.5px;
+           text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+        }
+        .navclose a:hover{
+            text-decoration: overline;
+            text-decoration-color: #4c0583;
+        }
+       .navclose .myBooks{
+            background-color: #4c0583;
+            padding:8px 14px ;
+            border-radius: 20px;
+            color: #fff;
+        }
+        .navclose .myVideos{
+            background-color: #f7b731;
+            padding:8px 14px ;
+            border-radius: 20px;
+            color: #fff;
+        }
+       
+        .navclose .myBooks:hover{
+            background-color: #f7b731; 
+        }
+        .navclose .myVideos:hover{
+            background-color: #4c0583;
+        }
+
+    .harmburgerContainer{
+        display: none;
+    }
+
+  .navclose,  .navopen{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 0vh;
+        left: 2px;
+        box-shadow: none;
+        background-color: #fff;
+        height: 10vh;
+        width: 60%;
+    z-index: 2;
+    }
+
+    .cancel{
+        position: absolute;
+        top: 3vh;
+        right: 2px;
+        font-size: 30px;
+        font-weight: 600;
+        display: none;
+    }
+    .dashboardLink{
+        background-color: #fff;
+        width: auto;
+        text-align: center;
+        color: #000000;
+    }
+    .logoContainer{
+        position: relative;
+        margin-right: 10%;
+        /* margin-left: 100px; */
+     }
+}
